@@ -61,8 +61,9 @@ if (! loc){
     alert("No game ID specified in URL. WTF.");
 }
 
-$.getJSON("http://mechacrew.com/worldview/" + game_id + "/1/", 
+// $.getJSON("http://mechacrew.com/worldview/" + game_id + "/1/", 
 // $.getJSON("http://" + server_address.php + "/" + game_id + "/1/", 
+$.getJSON("http://127.0.0.1:8009/worldview/" + game_id + "/1/", 
 	  function(gamejson){
 	      mylog("JSON",gamejson);
 	      init = process_game_json(gamejson);
